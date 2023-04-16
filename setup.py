@@ -97,7 +97,7 @@ def add_numpy(ext):
         sys.exit('Please install numpy first.')
     ext.include_dirs.append(numpy.get_include())'''
     # Quickly changing to check if installation via poetry is possible
-    my_numpy = '/home/reinaldo/.local/lib/python3.9/site-packages/numpy/core/include"
+    my_numpy = "/home/reinaldo/.local/lib/python3.9/site-packages/numpy/core/include"
     ext.include_dirs.append(my_numpy)
 
 
