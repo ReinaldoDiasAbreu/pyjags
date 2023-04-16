@@ -91,11 +91,14 @@ def add_jags(ext):
 
 
 def add_numpy(ext):
-    try:
+    ''''try:
         import numpy
     except ImportError:
         sys.exit('Please install numpy first.')
-    ext.include_dirs.append(numpy.get_include())
+    ext.include_dirs.append(numpy.get_include())'''
+    # Quickly changing to check if installation via poetry is possible
+    my_numpy = '/home/reinaldo/.local/lib/python3.9/site-packages/numpy/core/include"
+    ext.include_dirs.append(my_numpy)
 
 
 def add_pybind11(ext):
